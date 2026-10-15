@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f4f6f9;
+        }
+
+        header{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .container{
+            max-width:1200px;
+            margin:auto;
+            padding:20px;
+        }
+
+        .search-box{
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        .search-box input{
+            width:60%;
+            padding:10px;
+        }
+
+        .books{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .book{
+            background:white;
+            border-radius:10px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.2);
+            padding:15px;
+        }
+
+        .price{
+            color:green;
+            font-weight:bold;
+        }
+
+        .available{
+            color:white;
+            background:green;
+            padding:5px 10px;
+            border-radius:5px;
+        }
+
+        button{
+            background:#3498db;
+            color:white;
+            border:none;
+            padding:10px;
+            margin-top:10px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        footer{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Online Bookstore</h1>
+    <p>Browse and Order Books Online</p>
+</header>
+
+<div class="container">
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search by title or author">
+    </div>
+
+    <div class="books">
+
+        <div class="book">
+            <h3>Java Programming</h3>
+            <p>Author: James Gosling</p>
+            <p>Category: Programming</p>
+            <p class="price">₹499</p>
+            <span class="available">Available</span><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <h3>Python Basics</h3>
+            <p>Author: Guido van Rossum</p>
+            <p>Category: Programming</p>
+            <p class="price">₹550</p>
+            <span class="available">Available</span><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <h3>Data Structures</h3>
+            <p>Author: Mark Allen</p>
+            <p>Category: Computer Science</p>
+            <p class="price">₹650</p>
+            <span class="available">Available</span><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <h3>Machine Learning</h3>
+            <p>Author: Andrew Ng</p>
+            <p>Category: AI</p>
+            <p class="price">₹850</p>
+            <span class="available">Available</span><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <h3>Web Development</h3>
+            <p>Author: David Flanagan</p>
+            <p>Category: Web</p>
+            <p class="price">₹450</p>
+            <span class="available">Available</span><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <h3>Database Systems</h3>
+            <p>Author: Elmasri</p>
+            <p>Category: Database</p>
+            <p class="price">₹700</p>
+            <span class="available">Available</span><br>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <div style="margin-top:30px;background:white;padding:20px;border-radius:10px;">
+        <h2>Track Order Status</h2>
+        <p>Order ID: BOOK12345</p>
+        <p>Status: <b>Shipped</b></p>
+    </div>
+
+    <!-- New Feature -->
+    <div style="margin-top:20px;background:#dff0d8;padding:20px;border-radius:10px;">
+        <h3>Thank You for Visiting Our Bookstore!</h3>
+        <p>We appreciate your support and hope you enjoy your books.</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Online Bookstore</p>
+</footer>
+
+</body>
+</html>
